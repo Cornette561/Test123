@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Team Name | Basketball</title>
+  <meta name="description" content="Register, see photos, and get in touch with Your Team Name basketball.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="logo">🏀 YOUR TEAM</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Play Hard.<br><span>Play Together.</span></h1>
+      <p>Youth and adult basketball programs built on teamwork, effort, and fun.</p>
+      <a href="#register" class="btn">Register Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p class="lead">Replace this with a short description of your program: who you serve, what you offer, and what makes you different.</p>
+  </section>
+
+  <section id="gallery" class="section dark">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <img src="images/photo1.jpg" alt="Basketball game action">
+      <img src="images/photo2.jpg" alt="Players on the court">
+      <img src="images/photo3.jpg" alt="Team huddle">
+      <img src="images/photo4.jpg" alt="Practice drills">
+      <img src="images/photo5.jpg" alt="Game day">
+      <img src="images/photo6.jpg" alt="Team celebration">
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <h2>Registration</h2>
+    <p class="lead">Fill out the form below to sign up.</p>
+    <!-- Replace YOUR_REGISTRATION_ID with your Formspree form ID -->
+    <form class="form" action="https://formspree.io/f/YOUR_REGISTRATION_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Registration">
+      <label>Player Name <input type="text" name="player_name" required></label>
+      <label>Age / Grade <input type="text" name="age_grade" required></label>
+      <label>Parent / Guardian Name <input type="text" name="guardian_name"></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone" required></label>
+      <label>Program
+        <select name="program" required>
+          <option value="">Select one</option>
+          <option>Youth League</option>
+          <option>Teen League</option>
+          <option>Adult League</option>
+          <option>Camps / Clinics</option>
+        </select>
+      </label>
+      <label>Notes <textarea name="notes" rows="4"></textarea></label>
+      <button type="submit" class="btn">Submit Registration</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section dark">
+    <h2>Contact Us</h2>
+    <p class="lead">Questions? Send us a message.</p>
+    <!-- Replace YOUR_CONTACT_ID with a second Formspree form ID -->
+    <form class="form" action="https://formspree.io/f/YOUR_CONTACT_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Contact Message">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Team Name · you@example.com · (555) 555-5555</p>
+  </footer>
+
+</body>
+</html>
